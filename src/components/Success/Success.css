@@ -1,0 +1,23 @@
+.section-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.successimage {
+  height: 200px;
+  width: 200px;
+  object-fit: fill;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.successtext {
+  font-size: 22px;
+  color: var(--font-color);
+}

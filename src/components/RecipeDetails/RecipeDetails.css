@@ -1,0 +1,68 @@
+.section-recipedetail {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.recipedetail-stepbox {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--font-color);
+}
+
+.recipedetailspan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipedetail-step {
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--font-color);
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 14px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  color: var(--font-black);
+}
+
+.content-table thead tr {
+  text-align: left;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 18px;
+  background-color: var(--table-heading-bg);
+  color: var(--font-color);
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--font-color);
+}
+
+.content-table tbody tr {
+  text-align: center;
+  color: var(--font-color);
+  font-size: 13px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-weight: bold;
+}
+
+.content-table tbody tr:hover {
+  color: var(--font-hover);
+  background-color: var(--bg-hover);
+}

@@ -1,0 +1,437 @@
+.cardcontainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  padding-right: 100px;
+  margin-bottom: 30px;
+  gap: 1.5px;
+}
+
+.front {
+  background-color: var(--book-bg);
+  border-radius: 30px;
+  width: 500px;
+  -webkit-box-shadow: -4px 4px 6px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 4px 6px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: -4px 4px 6px 3px rgba(0, 0, 0, 0.75);
+}
+
+h4 {
+  font-size: 14px;
+}
+
+.bookcorner {
+  display: flex;
+  flex-direction: row;
+  border-radius: 30px;
+  border-left: 30px solid grey;
+  height: 600px;
+  padding: 10px 10px;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  -webkit-box-shadow: 10px 3px 6px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 3px 6px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 3px 6px 3px rgba(0, 0, 0, 0.75);
+  background-color: var(--book-bg);
+}
+
+.frontcontainer-row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.front-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
+select {
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(205, 205, 205);
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--font-color);
+  background-color: var(--select-bg);
+}
+
+option {
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--font-color);
+}
+
+.recipecheckboxtext {
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+.front-input {
+  width: 250px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+  outline: none;
+  offset: none;
+  font-size: 16px;
+  color: var(--font-black);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.front-input::placeholder {
+  color: darkgrey;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.back {
+  height: 550px;
+  width: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.backopen {
+  height: 550px;
+  width: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.front-conservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.front-conservationitems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.front-notesarea {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.count {
+  font-size: 15px;
+  color: var(--font-color);
+}
+
+.front-icon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  color: var(--icon-color);
+}
+
+textarea {
+  width: 350px;
+  height: 200px;
+  border-radius: 15px;
+  outline: none;
+  offset: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.submitbtn {
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 8px 14px;
+  /* margin-top: 300px;
+  margin-left: 200px; */
+  cursor: pointer;
+}
+
+.bookpage {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  /* height: 700px; */
+  height: 600px;
+  border-right: 30px solid grey;
+  padding-top: 40px;
+  border-radius: 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.ingredientsearchbar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.ingredientsearchtext {
+  font-size: 13px;
+  color: var(--font-color);
+}
+
+.ingredientsearchinput {
+  border-radius: 10px;
+  height: 30px;
+  width: 250px;
+  outline: none;
+  offset: none;
+  padding: 15px;
+  border: 0.7px solid darkgray;
+  font-size: 14px;
+}
+
+.iconpos {
+  position: absolute;
+  top: 27px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.ingredientsearchicon {
+  height: 15px;
+  width: 15px;
+}
+
+.ingredient-matchlist {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  flex-wrap: nowrap;
+  gap: 70px;
+  position: relative;
+}
+.ingredient-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inglist {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+
+.ingredient-box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ingname {
+  font-size: 13px;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.ingremoveicon {
+  color: var(--icon-color);
+}
+
+.ingcolumn {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.bookhr {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  border-right: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  top: 35px;
+  left: 130px;
+}
+
+.booknumbers {
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 99;
+  position: relative;
+  right: -5px;
+}
+.ingnumbers {
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+  width: 10px;
+  height: 10px;
+  /* line-height: 45px; */
+  text-align: center;
+  border-radius: 50%;
+  z-index: 99;
+  position: relative;
+  right: -5px;
+}
+
+.totalcontent {
+  font-weight: bolder;
+  color: var(--font-color);
+}
+
+h4 {
+  text-align: center;
+  color: var(--font-color);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 10px; */
+}
+
+.backcontainer-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  align-items: center;
+}
+
+.frontnotesbox {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.front-notesheading {
+  font-size: 15px;
+  color: var(--font-color);
+}
+
+.frontnotes {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.notesnumber {
+  font-size: 12px;
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  clip-path: circle();
+}
+
+.notesinput {
+  width: 380px;
+  height: 25px;
+  border-radius: 10px;
+  outline: none;
+  offset: none;
+  border: 0.8px solid grey;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.btnbox {
+  margin-top: 50px;
+  display: flex;
+  justify-content: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.switch {
+  font-size: 10px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 16px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: #abe7ab;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  width: 20px;
+  inset: 0;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.switch input:checked + .slider {
+  background: #007500;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #007500;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(1.6em);
+}

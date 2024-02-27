@@ -1,0 +1,70 @@
+:root {
+  --body-background: white;
+  --font-color: #333;
+  --icon-color: #333;
+  --icon-hover: rgb(222, 222, 222);
+  --table-heading-bg: rgb(192, 187, 187);
+  --bg-hover: grey;
+  --font-hover: #fff;
+  --font-black: #333;
+  --book-padding: grey;
+  --book-bg: #fff;
+  --select-bg: #fff;
+  --btn-bg: #333;
+  --btn-color: #fff;
+}
+
+[data-theme="dark"] {
+  --body-background: black;
+  --font-color: #fff;
+  --icon-color: #fff;
+  --icon-hover: grey;
+  --table-heading-bg: rgb(192, 187, 187);
+  --bg-hover: grey;
+  --font-hover: #fff;
+  --font-black: #333;
+  --book-padding: #fff;
+  --book-bg: #333;
+  --select-bg: #333;
+  --btn-bg: #fff;
+  --btn-color: #333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  transition: all 0.4s ease-in;
+}
+
+body {
+  background-color: var(--body-background);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  background: #fff;
+}
+::-webkit-scrollbar-track-piece {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}

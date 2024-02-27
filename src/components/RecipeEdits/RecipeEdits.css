@@ -1,0 +1,138 @@
+.section-recipeedits {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipeedits-iconbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.recipeedits-icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  color: var(--icon-color);
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.recipeedits-icon:hover {
+  background-color: var(--icon-hover);
+  color: var(--icon-color);
+  border-radius: 50%;
+}
+
+.recipeedits-listbox {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  background-color: rgb(249, 249, 249);
+  /* border: 1px solid red; */
+}
+
+.recipeedits-listtitle {
+  font-size: 20px;
+  text-align: center;
+  color: var(--font-black);
+}
+
+.recipeedits-listicon {
+  height: 20px;
+  width: 20px;
+  color: #333;
+  padding: 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.recipeedits-listicon:hover {
+  background-color: rgb(222, 222, 222);
+  border-radius: 50%;
+}
+
+.recipeedits-ingbox {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(228, 228, 228);
+  height: max-content;
+  position: relative;
+}
+
+.receipeedits-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* gap: 30px; */
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.receipeedits-ingcolumn {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.receipedits-columnname {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--font-black);
+}
+
+.receipedits-ingname {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: rgb(88, 88, 88);
+}
+
+.receipeedits-inglist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hr {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  border-right: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  top: 130px;
+  left: 300px;
+
+  @media all and (min-width: 1024px) and (max-width: 1280px) {
+    top: 130px;
+    left: 165px;
+  }
+}
+
+.numbers {
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 99;
+  position: relative;
+  right: -5px;
+}

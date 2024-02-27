@@ -1,0 +1,37 @@
+.appsection {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  column-gap: 10px;
+  padding-top: 5px;
+  /* padding-top: 30px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: var(--body-background);
+  min-height: 100vh; */
+}
+
+.sidebarsection {
+  height: max-content;
+  border-right: 0.8px solid #484848;
+  justify-content: center;
+}
+
+.contentsection {
+  /* display: flex;
+  flex: 3; */
+}
+
+h2 {
+  font-size: 36px;
+  color: var(--body-color);
+}
+
+article {
+  font-size: 30px;
+  color: var(--link-color);
+}
