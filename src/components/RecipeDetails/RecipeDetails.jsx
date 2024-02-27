@@ -3,23 +3,9 @@ import "./RecipeDetails.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEuroSign, faSort } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import { contentData } from "../../data/contentData";
 
 const RecipeDetails = () => {
-  const cardVariants = {
-    offscreen: {
-      y: 300,
-    },
-    onscreen: {
-      y: 50,
-      rotate: -10,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 0.8,
-      },
-    },
-  };
-
   const recipedetailboard = {
     initial: { y: "-100%" },
     animate: { y: 0 },
@@ -27,30 +13,42 @@ const RecipeDetails = () => {
     transition: { duration: 0.8 },
   };
 
+  const ingredientPointsAnimation = (delay) => {
+    return {
+      initial: { opacity: 0, x: -50 },
+      animate: { opacity: 1, x: 0 },
+      transition: {
+        delay: 0.5 + delay / 10,
+      },
+    };
+  };
+
   return (
     <motion.section {...recipedetailboard} className="section-recipedetail">
       <div className="recipedetail-stepbox">
-        <div className="recipedetailspan">
-          <span className="recipedetail-step">Pastes </span>
-          <span className="recipedetail-step">Biscuits </span>
-        </div>
-        <div className="recipedetailspan">
-          <span className="recipedetail-step">Garnitures</span>
-          <span className="recipedetail-step">Chaudes</span>
-        </div>
-        <div className="recipedetailspan">
-          <span className="recipedetail-step">Garnitures</span>
-          <span className="recipedetail-step">Froides</span>
-        </div>
-        <div className="recipedetailspan">
-          <span className="recipedetail-step">Decors</span>
-          <span className="recipedetail-step">Autres</span>
-        </div>
-        <div className="recipedetailspan">
-          <span className="recipedetail-step">Tout</span>
-          <span className="recipedetail-step">Afficher</span>
+        {contentData.map((content, i) => (
+          <div className="recipedetailspan" key={i}>
+            <span className="recipedetail-step">{content.name} </span>
+            <span className="recipedetail-step">{content.subname} </span>
+          </div>
+        ))}
+
+        <div className="borderbox">
+          <hr className="borderline" />
         </div>
       </div>
+
+      <div className="rowlines">
+        {contentData.map((content, i) => (
+          <div className="recipedetail-link" key={i}>
+            <motion.div
+              className="recipedetail-linkdots"
+              {...ingredientPointsAnimation(i + 4)}
+            ></motion.div>
+          </div>
+        ))}
+      </div>
+
       <div className="tablediv">
         <table className="content-table">
           <thead>

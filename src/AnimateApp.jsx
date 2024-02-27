@@ -3,7 +3,6 @@ import "./App.css";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import BookPage from "./pages/BookPage";
-import Input from "./pages/Input";
 import { AnimatePresence } from "framer-motion";
 import SuccessPage from "./pages/SuccessPage";
 

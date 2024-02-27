@@ -25,7 +25,7 @@ const Success = () => {
     >
       <div>
         <img
-          src="https://img.freepik.com/free-vector/check-mark-green-3d_78370-4446.jpg?t=st=1709030626~exp=1709034226~hmac=1aed4bf66a489f567c6649276d03743d38c0efa45e341d2f79868c7a5f68df70&w=1060"
+          src="https://www.shareicon.net/data/2016/08/20/817720_check_395x512.png"
           alt=""
           className="successimage"
         />

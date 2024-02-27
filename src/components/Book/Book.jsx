@@ -41,17 +41,13 @@ const Book = () => {
       animate: { opacity: 1, x: 0, x: -0.05 },
       transition: {
         delay: 0 + delay / 1,
-        duration: 10,
+        duration: 4,
       },
     };
   };
 
   const successPage = () => {
     navigate("/success-page");
-  };
-
-  const cancelPage = () => {
-    setToggle(false);
   };
 
   return (
@@ -212,7 +208,7 @@ const Book = () => {
         )}
       </div>
       {toggle && (
-        <div className="bookcorner">
+        <motion.div className="bookcorner" {...bookanimation(0)}>
           {/* Second page of book */}
           <div className="front-container"></div>
           <div className="backcontainer-row totalcontent">
@@ -311,7 +307,7 @@ const Book = () => {
               <Button title="Ajouter" submit={successPage} />
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </motion.div>
   );

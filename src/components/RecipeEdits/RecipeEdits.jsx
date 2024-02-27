@@ -35,6 +35,16 @@ const RecipeEdits = () => {
     transition: { duration: 0.8 },
   };
 
+  const ingredientPointsAnimation = (delay) => {
+    return {
+      initial: { opacity: 0, y: -100 },
+      animate: { opacity: 1, y: 0 },
+      transition: {
+        delay: 0.5 + delay / 10,
+      },
+    };
+  };
+
   return (
     <motion.section {...recipeditanimation} className="section-recipeedits">
       <div className="recipeedits-iconbox">
@@ -111,9 +121,13 @@ const RecipeEdits = () => {
           ))}
           <div className="hr">
             {ingredientsData.map((item, i) => (
-              <div className="numbers" key={i}>
+              <motion.div
+                className="numbers"
+                key={i}
+                {...ingredientPointsAnimation(i + 4)}
+              >
                 {item.length}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -123,17 +137,3 @@ const RecipeEdits = () => {
 };
 
 export default RecipeEdits;
-
-{
-  /* {ingredientsData.map((item, i) => (
-            <div className="receipeedits-inglist" key={i}>
-              <div>
-                <h4 className="receipedits-columnname">{item.name}</h4>
-              </div>
-
-              <div>
-                <h4 className="receipedits-columnname">{item.weight}&nbsp;g</h4>
-              </div>
-            </div>
-          ))} */
-}

@@ -10,9 +10,8 @@
 
 .successimage {
   height: 200px;
-  width: 200px;
+  width: 100%;
   object-fit: fill;
-  padding: 10px;
   border-radius: 50%;
   cursor: pointer;
 }
