@@ -46,6 +46,16 @@ const Book = () => {
     };
   };
 
+  const ingredientPointsAnimation = (delay) => {
+    return {
+      initial: { opacity: 0, y: -100 },
+      animate: { opacity: 1, y: 0 },
+      transition: {
+        delay: 0.5 + delay / 10,
+      },
+    };
+  };
+
   const successPage = () => {
     navigate("/success-page");
   };
@@ -92,9 +102,13 @@ const Book = () => {
                 </div>
                 <div className="bookhr">
                   {ingredientsData.map((item, i) => (
-                    <div className="booknumbers" key={i}>
+                    <motion.div
+                      className="booknumbers"
+                      key={i}
+                      {...ingredientPointsAnimation(i + 3)}
+                    >
                       {item.length}
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
                 <div className="ingredientbox">
