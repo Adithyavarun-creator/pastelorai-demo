@@ -125,9 +125,7 @@ const RecipeEdits = () => {
                 className="numbers"
                 key={i}
                 {...ingredientPointsAnimation(i + 4)}
-              >
-                {item.length}
-              </motion.div>
+              ></motion.div>
             ))}
           </div>
         </div>

@@ -40,7 +40,7 @@ const RecipeDetails = () => {
 
       <div className="rowlines">
         {contentData.map((content, i) => (
-          <div className="recipedetail-link" key={i}>
+          <div className="recipedetail-link" key={content.id}>
             <motion.div
               className="recipedetail-linkdots"
               {...ingredientPointsAnimation(i + 4)}
